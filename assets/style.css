@@ -85,9 +85,10 @@ section.card {
   margin: 20px 0;
 }
 
-h1, h2 { line-height: 1.25; }
+/* Long Russian words ("конфиденциальности") must not overflow a phone-width heading. */
+h1, h2 { line-height: 1.25; overflow-wrap: break-word; hyphens: auto; }
 h2 { color: var(--gold); font-size: 21px; margin-top: 28px; }
-article h1 { font-size: 32px; margin: 32px 0 4px; }
+article h1 { font-size: clamp(24px, 7.5vw, 32px); margin: 32px 0 4px; }
 .effective { color: var(--muted); margin-top: 0; }
 .summary { background: var(--surface); border-radius: 14px; padding: 14px 18px; }
 
