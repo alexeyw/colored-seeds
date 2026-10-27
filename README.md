@@ -13,3 +13,7 @@ Plain HTML and one stylesheet; no build step, no scripts, no trackers.
 
 The game's source code is in a private repository; this folder is maintained there (`site/`) and
 copied to the public `alexeyw/colored-seeds` repository, which serves it from the `main` branch.
+
+The site root, https://alexeyw.github.io/, is the separate `alexeyw/alexeyw.github.io` repository:
+it redirects here and holds the Search Console verification file that the Google Cloud OAuth
+branding relies on.
